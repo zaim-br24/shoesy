@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;1,700&display=swap');
+
+*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    max-width: 100%;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* the same styles */
+.product_cards_wrapper,
+.navbar_container, 
+.wrapper_slider,
+.statement_conatiner,
+.most_sale_container,
+.brand_wrapper
+{
+    width: 90%;
+    margin: 3% auto;
+    border: .5px solid rgba(0, 0, 0, 0.253);
+
+}
+
+/*______________________________ Nav Bar ___________________________ */
+
+.navbar_container{
+    height: 50px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    box-shadow: 0px 10px 13px -7px #0000005d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.logo{
+    margin-left: 4rem;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+}
+.main_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_menu div a{
+    margin: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.main_menu div:hover{
+    cursor: pointer;
+    border-bottom:2px solid black ;
+}
+
+.search_box{
+    width: 300px;
+    height: 30px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border: .5px solid rgba(0, 0, 0, 0.411);    
+    border-radius: 10px;
+    padding: 2px;
+
+}
+.search_input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    
+
+}
+.search_input input{
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    outline: none;
+    border: none;
+}
+
+/* ________________________ HEADER SLIDER __________________________ */
+.wrapper_slider{
+    height: 600px;
+    /* box-shadow: 0px 2px 18px 5px rgba(0,0,0,0.36);
+    border-radius: 10px; */
+    border:1px solid rgba(0, 0, 0, 0.418) ;
+    position: relative;
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: 0 10px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: black;
+  }
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev{
+      left: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(71, 71, 71, 0.8);
+  }
+.image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.slider_img{
+    height: 100%;
+    width: 100%;
+
+}
+.slider_img img{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+   object-position: center;
+   transition: 1s ease-in;
+
+}
+
+.image_slider_animation{
+    animation-name: imageSlider;
+    animation-duration: 1s;
+}
+@keyframes imageSlider {
+    from {transform: translateX(70%);}
+    to {transform: translateX(0%);}
+}
+
+/* _________________ MOST SALE HASHTAGE______________________ */
+.most_sale_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border:1px solid rgba(0, 0, 0, 0.418) ;
+    max-width: 100%;
+    overflow: hidden;
+}
+.most_sale_container div {
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    border-radius: 10%;
+    font-size: 14px;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.most_sale_container div:hover {
+    transform: scale(1.1);
+}
+
+
+/* _________________ statement______________________ */
+.statement_conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+    padding: 2% 0;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.884);
+    border:1px solid rgba(0, 0, 0, 0.418) ;
+    color: white;
+
+
+}
+
+.match_header{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* ------------------- BRANDs SHOES------------------------ */
+.brand_wrapper{border: none;}
+.barnd_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px, 1fr));   
+    grid-gap: 10px;
+}
+.brand_card{
+    border:1px solid rgba(0, 0, 0, 0.418) ;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.brand_card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center ;
+  opacity: .8;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+ -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.brand_card:hover img{
+    -webkit-transform: scale3d(1.2, 1.2, 2);
+            transform: scale3d(1.2, 1.2, 2);
+            opacity: 1;
+  }
+.brand_card .shoes_type{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.541);
+  } 
+  .brand_card .shoes_type span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  /* ----------------------- footer --------------------------- */
+
+  .footer_wrapper{
+      background-color: black;
+      height: 60vh;
+      width: 100%;
+      margin: 0;
+  }
+  /* .footer_container{
+
+  } */
+ 
+/* __________________________________products card ______________________________*/
+/* 
+.cards_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(280px, 1fr));
+    grid-gap: 25px;
+}
+.card{
+    height: 450px;
+    border:1px solid rgba(0, 0, 0, 0.418) ;
+}
+.card .product_image{
+    height: 70%;
+    width: 100%;
+}
+.card .product_image img{
+    height: auto;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.product_details{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.product_details div{
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.brand_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.card_heart{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: right;
+} */

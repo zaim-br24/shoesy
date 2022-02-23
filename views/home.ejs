@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Clothes Shop</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    
+ </head>
+ <body>
+
+     <!-- Nav bar -->
+     <nav class="navbar_container">
+         <div class="logo">SHOESY</div>
+         <div class="main_menu">
+             <div class="men_link"><a href="/home/men">men</a></div>
+             <div class="women_link"><a href="/home/women">women</a></div>
+             <div class="kids_link"><a href="/home/kids">kids</a></div>
+             <div class="discounts_link"><a href="/home/discounts">discounts</a></div>
+
+         </div>
+         
+         <div class="search_box">
+             <div class="search_input">
+                 <input type="text" placeholder="search...">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+            </div>
+         <div class="shopping_bag"><i class="fa-solid fa-bag-shopping"></i></div>
+     </nav>
+
+     <!-- header slider -->
+
+     <div class="wrapper_slider">
+         <div class="image_container">
+            <div class="slider_img">
+                 <img class="slider_image" alt="">
+            </div>
+            
+             <!-- Next and previous buttons -->
+            <a class="prev"  onclick="prev()">&#10094;</a>
+            <a class="next"  onclick="next()">&#10095;</a>
+         </div>
+     </div>
+
+
+     <!-- most sale -->
+     <div class="most_sale_container">
+         <div class="hashtage_1">#shoes</div>
+         <div class="hashtage_2">#sneakers</div>
+         <div class="hashtage_3">#running_shoes</div>
+         <div class="hashtage_4">#unser_wear</div>
+         <div class="hashtage_4">#running_shoes</div>
+         <div class="hashtage_5">#running_shoes</div>
+         <div class="hashtage_6">#unser_wear</div>
+     </div>
+
+     <!-- STATEMENT  -->
+     <div class="statement_conatiner">
+         <h1 class="match_header">FIND YOUR PERFECT MATCH</h1>
+     </div>
+
+     <!-- Product cards -->
+     <!-- <div class="product_cards_wrapper">
+         <h1>popular right now</h1>
+         <div class="cards_container">
+             <div class="card">
+                 <div class="product_image"><img src="https://images.unsplash.com/photo-1608551279774-4b0c208cf00d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""></div>
+                 <div class="product_details">
+                     <div class="product_price">$54.99</div>
+                     <div class="brand_details">
+                         <div class="product_name">adidas shoe</div>
+                     <div class="product_category">men / women</div>
+                    </div>
+
+                     <div class="card_heart">	&#10084;</div>
+                 </div>
+             </div>
+
+             <div class="card">
+                <div class="product_image"><img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""></div>
+                <div class="product_details">
+                    <div class="product_price">$54.99</div>
+                    <div class="brand_details">
+                        <div class="product_name">adidas shoe</div>
+                    <div class="product_category">men / women</div>
+                   </div>
+
+                    <div class="card_heart">	&#10084;</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product_image"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""></div>
+                <div class="product_details">
+                    <div class="product_price">$54.99</div>
+                    <div class="brand_details">
+                        <div class="product_name">adidas shoe</div>
+                    <div class="product_category">men / women</div>
+                   </div>
+
+                    <div class="card_heart">	&#10084;</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product_image"><img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""></div>
+                <div class="product_details">
+                    <div class="product_price">$54.99</div>
+                    <div class="brand_details">
+                        <div class="product_name">adidas shoe</div>
+                    <div class="product_category">men / women</div>
+                   </div>
+
+                    <div class="card_heart">&#10084;</div>
+                </div>
+            </div>
+         </div>
+     </div> -->
+
+     <!-- BRAND categories -->
+
+     <div class="brand_wrapper">
+         <div class="barnd_container">
+             <div class="brand_card sport">
+                <a href="/sport">
+                    <img src="https://media.istockphoto.com/photos/lace-up-for-the-workout-of-your-life-picture-id618982838?k=20&m=618982838&s=612x612&w=0&h=uafTGpqRbCFOzK1icFpa1iA4SvO3JxeIE0GbijeY4nA=" alt="">
+                    <div class="shoes_type"><span>sport</span></div>
+                </a>
+                </div>
+             <div class="brand_card sneakers">
+                <a href="/sneakers">
+                    <img src="https://media.istockphoto.com/photos/black-fashion-sport-shoe-on-white-background-picture-id1337191336?k=20&m=1337191336&s=612x612&w=0&h=xURf4dAc6OC-SsXtYInwLw_GLhp0SdG_VWiPLFUgJQs=" alt="">
+                    <div class="shoes_type"><span>sneakers</span></div>
+                </a>
+                </div>
+              
+             <div class="brand_card classic">
+                 <a href="/classic">
+                    <img src="https://images.unsplash.com/photo-1581972308954-75c332e3fcbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    <div class="shoes_type"><span>classic</span></div>
+                 </a>
+             </div>
+             <div class="brand_card highHeels">
+                <a href="/highHeels">
+                    <img src="https://images.unsplash.com/photo-1590099033615-be195f8d575c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80" alt="">
+                    <div class="shoes_type"><span>high Heels</span></div>
+                </a>
+             </div>
+             <div class="brand_card oxfordShoes">
+                <a href="/oxfordShoes">
+                    <img src="https://cdn.shoepassion.de/catalog/product/s/h/shoepassion_543_f.jpg" alt="">
+                    <div class="shoes_type"><span>oxford Shoes</span></div>
+                </a>
+             </div>
+             <div class="brand_card boots">
+                <a href="/boots">
+                    <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+                    <div class="shoes_type"><span>boots</span></div>
+                </a>
+             </div>
+         </div>
+     </div>
+
+     <!-- FOOTER -->
+     <div class="footer_wrapper">
+         <div class="footer_container"></div>
+     </div>
+     <script>
+         
+            const slideImage = document.querySelector('.slider_image')
+            let index = 0;
+            const images = [
+                "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+                "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80",
+                "https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1608667508764-33cf0726b13a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+                "https://images.unsplash.com/photo-1566958799193-c2aa57a835d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1223&q=80",
+                "https://media.istockphoto.com/photos/black-fashion-sport-shoe-on-white-background-picture-id1337191336?k=20&m=1337191336&s=612x612&w=0&h=xURf4dAc6OC-SsXtYInwLw_GLhp0SdG_VWiPLFUgJQs=",
+                "https://images.unsplash.com/photo-1524532787116-e70228437bbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+                "https://images.unsplash.com/photo-1582897085656-c636d006a246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+                "https://images.unsplash.com/photo-1547586877-0351a7143cbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                "https://cdn.shoepassion.de/catalog/product/s/h/shoepassion_543_f.jpg"
+            ];
+            
+        
+            
+            const showImage = (n)=>{
+                slideImage.src = images[n];
+            
+            }
+            const autoSlide = ()=> {
+                setInterval(() => {
+                    showImage(index)           
+                    if(index >= images.length -1){
+                    index = -1;
+                    }
+                    index++
+                }, 2000);
+                
+            }
+        
+            showImage(index);
+            autoSlide()
+            const prev = ()=>{
+                if(index <= 0){
+                    index = images.length ;
+                }
+                index--
+                showImage(index)
+            }
+            const next = ()=>{
+                if(index >= images.length -1){
+                    index = -1;
+                }
+                index++
+                showImage(index)
+            
+            }
+
+     </script>
+    
+     <script src="app.js"></script>
+ </body>
+ </html>
